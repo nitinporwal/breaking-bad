@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Header from './Components/ui/Header';
 import CharacterGrid from './Components/characters/CharacterGrid';
+import Search from './Components/ui/Search';
 
 class App extends Component {
   state = {
@@ -21,6 +22,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
+        <Search />
         <CharacterGrid isLoading={this.state.isLoading} items={this.state.items} />
       </div>
     );
