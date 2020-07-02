@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class CharacterItem extends Component {
     render() {
-        console.log(this.props.item);
+        // console.log(this.props.item);
         return (
             <div className='card'>
                 <div className='card-inner'>

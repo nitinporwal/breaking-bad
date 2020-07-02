@@ -6,9 +6,9 @@ class Search extends Component {
     }
     handleInputChange = (event) => {
         this.setState({chars: event.target.value})
+        this.props.handleQuery(event.target.value);
     }
     render() {
-        console.log(this.state);
         return (
             <section className="search">
                 <form>
