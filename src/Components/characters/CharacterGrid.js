@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import CharacterItem from './CharacterItem'
+import Spinner from '../ui/Spinner'
 
 class CharacterGrid extends Component {
     render() {
         return (
             (this.props.isLoading ? 
                 (
-                    <h1>Loading.....</h1>
+                    <Spinner />
                 ):
                 (
                     <section className="cards">
